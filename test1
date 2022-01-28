@@ -1,0 +1,16 @@
+import requests
+import logging
+import junit
+
+logging.basicConfig(level=logging.DEBUG)
+
+def test_status():
+    path = 'http://httpbin.org/get'
+
+response = requests.get('http://httpbin.org/get')
+
+if response.status_code == 200:
+
+    print('Успешно')
+else:
+    print('Попробуйте заново')
