@@ -1,0 +1,15 @@
+import requests
+import logging
+
+logging.basicConfig(level=logging.DEBUG)
+
+def test_another_status():
+    path = 'http://httpbin.org/get'
+
+response = requests.get('http://httpbin.org/gettttt')
+
+response.raise_for_status()
+
+print('OK')
+
+
