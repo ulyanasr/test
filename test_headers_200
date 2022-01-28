@@ -1,0 +1,11 @@
+import requests
+
+def test_headers():
+    path = 'https://httpbin.org/headers'
+
+response = requests.get('https://httpbin.org/headers')
+
+print(response.text)
+
+
+
